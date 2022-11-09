@@ -1,0 +1,16 @@
+
+
+
+resource "aws_instance" "bastion" {
+  ami           = 0149b2da6ceec4bb0
+  instance_type = "t3.micro"
+  subnet_id  = "subnet-97b959db"
+  security_groups = ["sg-9450428e"]
+  key_pair = aws_key_pair.deployer.id
+
+  tags = {
+    Name = "bastion"
+  }
+}
+
+
