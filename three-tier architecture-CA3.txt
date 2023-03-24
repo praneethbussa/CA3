@@ -6,7 +6,7 @@ resource "aws_vpc" "project-vpc" {
   
 
   tags = {
-    Name = "project-vpc"
+    Name = "project-virtualprivatecloud"
   }
 }
 
