@@ -9,7 +9,7 @@ resource "aws_instance" "jenkins" {
   key_pair = aws_key_pair.deployer.id
 
   tags = {
-    Name = "jenkinsandintegration"
+    Name = "jenkinsan"
   }
 }
 
